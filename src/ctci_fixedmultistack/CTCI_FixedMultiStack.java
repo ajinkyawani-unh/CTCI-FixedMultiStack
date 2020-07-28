@@ -16,6 +16,33 @@ public class CTCI_FixedMultiStack {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        FixedMultiStack stack = new FixedMultiStack(5);
+        stack.push(1, 3);
+        stack.push(1, 4);
+        stack.push(1, 5);
+        stack.push(1, 6);
+        stack.push(1, 7);
+        
+        stack.push(2, 8);
+        stack.push(2, 9);
+        stack.push(2, 10);
+        stack.push(2, 11);
+        stack.push(2, 12);
+        
+        stack.push(3, 13);
+        stack.push(3, 14);
+        stack.push(3, 15);
+        stack.push(3, 16);
+        stack.push(3, 17);
+       
+//        int popValue;
+//        popValue = stack.pop(1);
+//        popValue = stack.pop(2);
+//        popValue = stack.pop(3);
+        
+
+        
+        stack.printStack();
     }
     
 }
