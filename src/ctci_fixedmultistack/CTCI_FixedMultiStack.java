@@ -35,10 +35,15 @@ public class CTCI_FixedMultiStack {
         stack.push(3, 16);
         stack.push(3, 17);
        
-//        int popValue;
-//        popValue = stack.pop(1);
-//        popValue = stack.pop(2);
-//        popValue = stack.pop(3);
+        stack.printStack();
+        
+        int popValue;
+        popValue = stack.pop(1);
+        System.out.println("\nPopped value:" +popValue);
+        popValue = stack.pop(2);
+        System.out.println("\nPopped value:" +popValue);
+        popValue = stack.pop(3);
+        System.out.println("\nPopped value:" +popValue);
         
 
         

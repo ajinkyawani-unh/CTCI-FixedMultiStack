@@ -32,25 +32,26 @@ public class FixedMultiStack {
             System.out.println("\n Stack: " +stackNum+ " is full");
     }
     
-//    public int pop(int stackNum){
-//        if(! this.isEmpty(stackNum)){
-//            int offset;
-//            if (stackNum == 1)
-//                offset = 0;
-//            else if (stackNum == 2)
-//                offset = 4;
-//            else
-//                offset = 9;
-//        
-//            int size = this.currentStackSizes[stackNum - 1];
-//            this.currentStackSizes[stackNum - 1]--;
-//            int value = this.stackValues[offset + size];
-//            this.stackValues[offset + size] = 0;
-//            return value;
-//        }
-//        else
-//            return 0;
-//    }
+    public int pop(int stackNum){
+        if(! this.isEmpty(stackNum)){
+            int offset;
+            if (stackNum == 1)
+                offset = 0;
+            else if (stackNum == 2)
+                offset = 4;
+            else
+                offset = 9;
+        
+            int size = this.currentStackSizes[stackNum - 1];
+            this.currentStackSizes[stackNum - 1]--;
+            int topLocation = 5 - size;
+            int value = this.stackValues[offset + topLocation];
+            this.stackValues[offset + topLocation] = 0;
+            return value;
+        }
+        else
+            return 0;
+    }
     
     public void printStack() {
         for(int i = 0; i < (this.numberOfStacks * this.stackCapacity); i++) {
