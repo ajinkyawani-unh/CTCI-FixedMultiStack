@@ -38,9 +38,9 @@ public class FixedMultiStack {
             if (stackNum == 1)
                 offset = 0;
             else if (stackNum == 2)
-                offset = 4;
+                offset = 5;
             else
-                offset = 9;
+                offset = 10;
         
             int size = this.currentStackSizes[stackNum - 1];
             this.currentStackSizes[stackNum - 1]--;
